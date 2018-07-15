@@ -82,7 +82,9 @@ There are testing frameworks in R, most notably [testthat](https://github.com/r-
 
 ## Automating testing alongside development with CI
 
-Assuming that you're using Git to develop your analysis code then you can have a continuous integration service (such as [Travis CI](https://travis-ci.org/) or [CircleCI](https://circleci.com/)) automatically test your code in a fresh environment every time you push to GitHub. Testing with CI is a great way to know that your analysis code is working exactly as expected in a reproducible environment from installation all the way through execution as you develop, revise, and improve it. To start off with I would recommend using Travis CI (it is the easiest to get up and running).
+Assuming that you're using Git to develop your analysis code then you can have a continuous integration service (such as [Travis CI](https://travis-ci.org/) or [CircleCI](https://circleci.com/)) automatically test your code in a fresh environment every time you push to GitHub. Testing with CI is a great way to know that your analysis code is working exactly as expected in a reproducible environment from installation all the way through execution as you develop, revise, and improve it. To see the output of the build/install and testing of this repo in Travis click on the build status badge at the top of the `README` (also here: [![Build Status](https://travis-ci.com/matthewfeickert/R-in-Jupyter-with-Binder.svg?branch=master)](https://travis-ci.com/matthewfeickert/R-in-Jupyter-with-Binder)).
+
+To start off with I would recommend using Travis CI (it is the easiest to get up and running).
 
 - [Getting started with Travis CI](https://docs.travis-ci.com/user/getting-started/)
 - Example [`.travis.yml`](https://github.com/matthewfeickert/R-in-Jupyter-with-Binder/blob/master/.travis.yml) in this repo
