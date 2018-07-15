@@ -21,6 +21,7 @@ Before learning how to setup R in Jupyter, first go check out how cool it is in 
 - [Testing Jupyter notebooks with pytest](#testing-jupyter-notebooks-with-pytest)
 - [Automating testing alongside development with CI](#automating-testing-alongside-development-with-ci)
 - [Setting up a Binder environment](#setting-up-a-binder-environment)
+- [Preservation and DOI with Zenodo](#preservation-and-doi-with-zenodo)
 - [Further Reading and Resources](#further-reading-and-resources)
 - [Acknowledgements](#acknowledgements)
 
@@ -41,20 +42,20 @@ Before you can begin you need to make sure that you have the following in your w
 
 > Papermill is a tool for parameterizing, executing, and analyzing Jupyter Notebooks.
 
-This means that you can use papermill to _externally_ run, manipulate, and test Jupyter notebooks. This allows you to use Jupyter notebooks as components of an automated data analysis pipeline or for procedurally testing variations.
+This means that you can use [papermill](https://github.com/nteract/papermill) to _externally_ run, manipulate, and test Jupyter notebooks. This allows you to use Jupyter notebooks as components of an automated data analysis pipeline or for procedurally testing variations.
 
 - To use with Jupyter notebooks running in the IRkernel [install the R bindings for papermill (`papermillR`)](https://github.com/nteract/papermillr)
 
 A toy example of how to use papermill is demonstrated in the [example Jupyter notebook](https://github.com/matthewfeickert/R-in-Jupyter-with-Binder/blob/master/R-in-Jupyter-Example.ipynb).
 
-## Testing Jupyter notebooks with pytest
+## Testing Jupyter notebooks with [pytest](https://docs.pytest.org/en/latest/)
 
 To provide testing for Jupyter notebooks we can use [pytest](https://docs.pytest.org/en/latest/) in combination with papermill.
 
 - [Install pytest](https://docs.pytest.org/en/latest/getting-started.html)
    - If you installed Jupyter with Conda then you can also [install pytest with Conda](https://anaconda.org/anaconda/pytest)
 
-One you have installed pytest and done some [minimal reading of the docs](https://docs.pytest.org/en/latest/getting-started.html#create-your-first-test) then create a `tests` directory and write your test files in Python inside of it.
+Once you have installed pytest and done some [minimal reading of the docs](https://docs.pytest.org/en/latest/getting-started.html#create-your-first-test) then create a `tests` directory and write your test files in Python inside of it.
 
 An example of some very simple tests using papermill is provided in [`tests/test_notebooks.py`](https://github.com/matthewfeickert/R-in-Jupyter-with-Binder/blob/master/tests/test_notebooks.py). Once you read though and understand what the testing file is doing execute the tests with `pytest` in the top level directory of the repo by running
 
@@ -99,6 +100,10 @@ The Binder team has done amazing work to make "Binderizing" a GitHub repository 
 - [Specifying an R environment with a runtime.txt file](https://mybinder.readthedocs.io/en/latest/sample_repos.html#specifying-an-r-environment-with-a-runtime-txt-file)
    - Example Jupyter+R environment on Binder: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
 - [Binder FAQs](https://mybinder.readthedocs.io/en/latest/faq.html)
+
+## Preservation and DOI with [Zenodo](https://zenodo.org/)
+
+To further make your analysis code more robust you can preserve it and make it citable by getting a DOI for the project repository with [Zenodo](https://zenodo.org/). Activating version tracking on your GitHub repository with Zenodo will allow it to automatically freeze a version of the repository with each new version tag and then archive it. Additionally, Zenodo will create a DOI for your project and versioned DOIs for the project releases which can be added as a DOI badge. This makes it trivial for others to cite your work and allows you to indicate what version of your code was used in any publications.
 
 ## Further Reading and Resources
 
