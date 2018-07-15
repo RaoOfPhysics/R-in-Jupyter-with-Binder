@@ -22,6 +22,7 @@ Before learning how to setup R in Jupyter, first go check out how cool it is in 
 - [Automating testing alongside development with CI](#automating-testing-alongside-development-with-ci)
 - [Setting up a Binder environment](#setting-up-a-binder-environment)
 - [Further Reading and Resources](#further-reading-and-resources)
+- [Acknowledgements](#acknowledgements)
 
 ## Requirements
 
@@ -102,3 +103,7 @@ The Binder team has done amazing work to make "Binderizing" a GitHub repository 
 - [Jupyter And R Markdown: Notebooks With R](https://www.datacamp.com/community/blog/jupyter-notebook-r), by [Karlijn Willems](https://github.com/Kacawi)
 - [Rocker](https://www.rocker-project.org/)'s [R configurations for Docker repo](https://github.com/rocker-org/rocker)
 - [rOpenSci](https://ropensci.org/)
+
+## Acknowledgements
+
+- The [Jupyter and Binder team](https://github.com/orgs/jupyterhub/people) for making amazing open source software
