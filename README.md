@@ -73,6 +73,12 @@ There are numerous reasons to test your code, but as a scientist an obvious one 
 
 Want to learn more? Check out the [Test and Code podcast](http://testandcode.com/) hosted by [Brian Okken](https://github.com/okken).
 
+### Why test with pytest?
+
+pytest is the most comprehensive and scalable testing framework that I know of. I am biased, but I continue to be impressed with how nimble, powerful, and easy it is to work with. It makes me want to write tests. For the purposes of this demo repository it is also important as it allows for writing tests that use papermill (papermill's `execute_notebook` is only accessible through the [Python API](http://papermill.readthedocs.io/en/latest/usage.html#execute-via-the-python-api)).
+
+There are testing frameworks in R, most notably [testthat](https://github.com/r-lib/testthat), which I assume are good. So I would encourage you to explore those as well.
+
 ## Automating testing alongside development with CI
 
 Assuming that you're using Git to develop your analysis code then you can have a continuous integration service (such as [Travis CI](https://travis-ci.org/) or [CircleCI](https://circleci.com/)) automatically test your code in a fresh environment every time you push to GitHub. Testing with CI is a great way to know that your analysis code is working exactly as expected in a reproducible environment from installation all the way through execution as you develop, revise, and improve it. To start off with I would recommend using Travis CI (it is the easiest to get up and running).
@@ -85,7 +91,7 @@ Assuming that you're using Git to develop your analysis code then you can have a
 
 [Binder](https://mybinder.org/) turns your GitHub repository into a fully interactive computational environment (as you hopefully have already seen from the demo notebook). It then allows people to run any code that exists in the repository from their web browser without having to install any code and is a great tool for collaboration and sharing results.
 
-The Binder team has done amazing work to make "Binderizing" a GitHub repository as simple as possible. In the case of getting an R computing environment many times all that you need (in addition to a `DESCRIPTION` file and maybe an `install.R`) is a `runtime.txt` file that dictates which daily snapshot of [MRAN](https://mran.microsoft.com/documents/rro/reproducibility) to use. See the [`binder`](https://github.com/matthewfeickert/R-in-Jupyter-with-Binder/tree/master/binder) directory for example of what is needed to get this repository to run in Binder.
+The Binder team has done amazing work to make "Binderizing" a GitHub repository as simple as possible. In the case of getting an R computing environment many times all that you need (in addition to a `DESCRIPTION` file and maybe an `install.R`) is a `runtime.txt` file that dictates which daily snapshot of [MRAN](https://mran.microsoft.com/documents/rro/reproducibility) to use. See the [`binder`](https://github.com/matthewfeickert/R-in-Jupyter-with-Binder/tree/master/binder) directory for an example of what is needed to get this repository to run in Binder.
 
 - [Specifying an R environment with a runtime.txt file](https://mybinder.readthedocs.io/en/latest/sample_repos.html#specifying-an-r-environment-with-a-runtime-txt-file)
    - Example Jupyter+R environment on Binder: [![Binder](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/binder-examples/r/master?filepath=index.ipynb)
