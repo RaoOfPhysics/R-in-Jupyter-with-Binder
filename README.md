@@ -109,8 +109,10 @@ To further make your analysis code more robust you can preserve it and make it [
 
 - [Jupyter And R Markdown: Notebooks With R](https://www.datacamp.com/community/blog/jupyter-notebook-r), by [Karlijn Willems](https://github.com/Kacawi)
 - [Rocker](https://www.rocker-project.org/)'s [R configurations for Docker repo](https://github.com/rocker-org/rocker)
+- [Noam Ross](https://github.com/noamross), "[Docker for the UseR](https://github.com/noamross/nyhackr-docker-talk)", [New York Open Statistical Programming Meetup (nyhackr)](https://nyhackr.org/) (July 11th, 2018)
 - [rOpenSci](https://ropensci.org/)
 
 ## Acknowledgements
 
 - The [Jupyter and Binder team](https://github.com/orgs/jupyterhub/people) for making amazing open source software
+- [Achintya Rao](https://github.com/RaoOfPhysics) for insightful feedback, thoughtful discussion, and excellent ideas
