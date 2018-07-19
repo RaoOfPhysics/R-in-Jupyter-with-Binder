@@ -103,7 +103,7 @@ The Binder team has done amazing work to make "Binderizing" a GitHub repository 
 
 ## Preservation and DOI with [Zenodo](https://zenodo.org/)
 
-To further make your analysis code more robust you can preserve it and make it citable by getting a DOI for the project repository with [Zenodo](https://zenodo.org/). Activating version tracking on your GitHub repository with Zenodo will allow it to automatically freeze a version of the repository with each new version tag and then archive it. Additionally, Zenodo will create a DOI for your project and versioned DOIs for the project releases which can be added as a DOI badge. This makes it trivial for others to cite your work and allows you to indicate what version of your code was used in any publications.
+To further make your analysis code more robust you can preserve it and make it [citable by getting a DOI](https://guides.github.com/activities/citable-code/) for the project repository with [Zenodo](https://zenodo.org/). Activating version tracking on your GitHub repository with Zenodo will allow it to automatically freeze a version of the repository with each new version tag and then archive it. Additionally, Zenodo will create a DOI for your project and versioned DOIs for the project releases which can be added as a DOI badge. This makes it trivial for others to cite your work and allows you to indicate what version of your code was used in any publications.
 
 ## Further Reading and Resources
 
